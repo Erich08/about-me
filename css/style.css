@@ -6,24 +6,47 @@ body {
   line-height: 35px;
 }
 
-h1 {
-  font-size: 3rem;
-  text-align: center;
-  padding-top: 5rem;
-}
-
-p {
-  font-size: 1.5rem;
-  text-align: center;
-  padding-top: 2rem;
-  width: 700px;
-  margin-left: 930px;
-}
-
 img {
   max-height: 500px;
   width: 100%;
 }
 
-header {
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 5rem;
+  margin-top: 10px;
+}
+
+p {
+  font-size: 1.5rem;
+  font-size: 1.25rem;
+  text-align: center;
+  padding-top: 2rem;
+  margin-top: 20px;
+  width: 700px;
+
+  display: inline;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+ol li {
+  text-align: center;
+  list-style-position: inside;
+  font-size: 1.5rem;
+  line-height: 50px;
+  list-style-type: number;
+}
+
+ul li {
+  text-align: center;
+  list-style-position: inside;
+  font-size: 1.25rem;
+  line-height: 50px;
+  list-style-type: disc;
 }
