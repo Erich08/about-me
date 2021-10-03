@@ -57,3 +57,30 @@ if (questionFive === 'YES' || questionFive === 'Y') {
   //console.log('That is correct!');
   alert('That is correct!');
 }
+
+let attempts = 1;
+
+
+
+for(let i = 4; i >= attempts; i-- ) {
+
+    let correctAnswer = 8;
+    let numberGuesser = parseInt(prompt('Guess a number between 1-20'));
+    
+    if(numberGuesser === correctAnswer) {
+        alert('You are correct.');
+        break;
+    } else if (numberGuesser < correctAnswer) {
+        alert(`Your guess is too low. You have ${(i - 1 )} attempts remaining.`);
+    } else if(numberGuesser > correctAnswer) {
+        alert(`Your guess is too high. You have ${(i)} attempts remaining.`);
+    }  
+    
+    if((i) === 1) {
+        alert(`The correct answer was ${correctAnswer}.`);
+        break;
+    }
+  }
+  
+
+
