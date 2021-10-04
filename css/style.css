@@ -23,30 +23,30 @@ p {
 img {
   max-height: 500px;
   width: 100%;
+  margin-top: 15px;
 }
 
 header {
 }
 
 h2 {
-    text-align: center;
-    font-size: 2rem;
-    margin-top: 20px;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 20px;
 }
 
 ol li {
-    text-align: center;
-    list-style-position: inside;
-    font-size: 1.5rem;
-    line-height: 50px;
-    list-style-type: number;
-    
+  text-align: center;
+  list-style-position: inside;
+  font-size: 1.5rem;
+  line-height: 50px;
+  list-style-type: number;
 }
 
 ul li {
-    text-align: center;
-    list-style-position: inside;
-    font-size: 1.25rem;
-    line-height: 50px;
-    list-style-type: disc;
+  text-align: center;
+  list-style-position: inside;
+  font-size: 1.25rem;
+  line-height: 50px;
+  list-style-type: disc;
 }
