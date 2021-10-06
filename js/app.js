@@ -107,5 +107,5 @@ for (let k = 6; k > guesses; k--) {
   if (correct) break;
 }
 
-alert(`${sports}`);
+alert(`The sports I played growing up were ${sports}`);
 alert(`Your total score was ${score}`);
