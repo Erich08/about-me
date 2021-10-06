@@ -92,7 +92,6 @@ let sports = ['baseball', 'hockey', 'basketball', 'football', 'wrestling'];
 let guesses = 0;
 let correct = false;
 for (let k = 6; k > guesses; k--) {
-  let abort = false;
   let userInput = prompt('What was a sport I played growing up?');
   for (let j = 0; j < sports.length; j++) {
     if (userInput.toLowerCase() === sports[j]) {
