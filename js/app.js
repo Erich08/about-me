@@ -7,29 +7,31 @@ alert(`Hello ${userName}! Welcome to my About Me page!`);
 
 alert("Let's play a little guessing game shall we?");
 
-let questionOne = prompt(
-  'Is my favorite color blue? Please respond to all questions with either yes or no.'
-).toUpperCase();
+function color(){
+  let questionOne = prompt(
+    'Is my favorite color blue? Please respond to all questions with either yes or no.'
+  ).toUpperCase();
 
-if (questionOne === 'YES' || questionOne === 'Y') {
-  //console.log('You are correct!');
-  alert('You are correct!');
-  score++;
-} else {
-  //console.log('Sorry, that is incorrect. My favorite color is blue.');
-  alert('Sorry, that is incorrect. My favorite color is blue.');
+  if (questionOne === 'YES' || questionOne === 'Y') {
+    //console.log('You are correct!');
+    alert('You are correct!');
+    score++;
+  } else {
+    //console.log('Sorry, that is incorrect. My favorite color is blue.');
+    alert('Sorry, that is incorrect. My favorite color is blue.');
+  }
 }
 
-let questionTwo = prompt('Did I grow up in Texas?').toUpperCase();
+  let questionTwo = prompt('Did I grow up in Texas?').toUpperCase();
 
-if (questionTwo === 'NO' || questionTwo === 'N') {
-  //console.log('You are correct! I grew up in Oklahoma.');
-  alert('You are correct! I grew up in Oklahoma.');
-  score++;
-} else {
-  //console.log('Sorry, that is incorrect. I grew up in Oklahoma');
-  alert('Sorry, that is incorrect. I grew up in Oklahoma');
-}
+  if (questionTwo === 'NO' || questionTwo === 'N') {
+    //console.log('You are correct! I grew up in Oklahoma.');
+    alert('You are correct! I grew up in Oklahoma.');
+    score++;
+  } else {
+    //console.log('Sorry, that is incorrect. I grew up in Oklahoma');
+    alert('Sorry, that is incorrect. I grew up in Oklahoma');
+  }
 
 let questionThree = prompt('Is my favorite meal lasagna?').toUpperCase();
 
