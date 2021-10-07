@@ -35,15 +35,17 @@ function growUp(){
   }
 }
 
-let questionThree = prompt('Is my favorite meal lasagna?').toUpperCase();
+function meal(){
+  let questionThree = prompt('Is my favorite meal lasagna?').toUpperCase();
 
-if (questionThree === 'YES' || questionThree === 'Y') {
-  //console.log('You are correct!');
-  alert('You are correct!');
-  score++;
-} else {
-  //console.log('Sorry, that is incorrect.');
-  alert('Sorry, that is incorrect.');
+  if (questionThree === 'YES' || questionThree === 'Y') {
+    //console.log('You are correct!');
+    alert('You are correct!');
+    score++;
+  } else {
+    //console.log('Sorry, that is incorrect.');
+    alert('Sorry, that is incorrect.');
+  }
 }
 
 let questionFour = prompt('Am I an Air Force veteran?').toUpperCase();
