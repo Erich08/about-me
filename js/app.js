@@ -22,6 +22,7 @@ function color(){
   }
 }
 
+function growUp(){
   let questionTwo = prompt('Did I grow up in Texas?').toUpperCase();
 
   if (questionTwo === 'NO' || questionTwo === 'N') {
@@ -32,6 +33,7 @@ function color(){
     //console.log('Sorry, that is incorrect. I grew up in Oklahoma');
     alert('Sorry, that is incorrect. I grew up in Oklahoma');
   }
+}
 
 let questionThree = prompt('Is my favorite meal lasagna?').toUpperCase();
 
