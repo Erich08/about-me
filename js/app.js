@@ -74,27 +74,30 @@ function kids(){
   }
 }
 
-let attempts = 1;
+function numberGame(){
+  let attempts = 1;
 
-for (let i = 4; i >= attempts; i--) {
-  let correctAnswer = 8;
-  let numberGuesser = parseInt(prompt('Guess a number between 1-20'));
+  for (let i = 4; i >= attempts; i--) {
+    let correctAnswer = 8;
+    let numberGuesser = parseInt(prompt('Guess a number between 1-20'));
 
-  if (numberGuesser === correctAnswer) {
-    alert('You are correct.');
-    score++;
-    break;
-  } else if (numberGuesser < correctAnswer) {
-    alert(`Your guess is too low. You have ${i - 1} attempts remaining.`);
-  } else if (numberGuesser > correctAnswer) {
-    alert(`Your guess is too high. You have ${i} attempts remaining.`);
-  }
+    if (numberGuesser === correctAnswer) {
+      alert('You are correct.');
+      score++;
+      break;
+    } else if (numberGuesser < correctAnswer) {
+      alert(`Your guess is too low. You have ${i - 1} attempts remaining.`);
+    } else if (numberGuesser > correctAnswer) {
+      alert(`Your guess is too high. You have ${i} attempts remaining.`);
+    }
 
-  if (i === 1) {
-    alert(`The correct answer was ${correctAnswer}.`);
-    break;
+    if (i === 1) {
+      alert(`The correct answer was ${correctAnswer}.`);
+      break;
+    }
   }
 }
+
 let sports = ['baseball', 'hockey', 'basketball', 'football', 'wrestling'];
 
 //let userInput = prompt('What was a sport I played growing up?');
