@@ -7,6 +7,14 @@ alert(`Hello ${userName}! Welcome to my About Me page!`);
 
 alert("Let's play a little guessing game shall we?");
 
+color();
+growUp();
+meal();
+veteran();
+kids();
+numberGame();
+sportsGuesser();
+
 function color(){
   let questionOne = prompt(
     'Is my favorite color blue? Please respond to all questions with either yes or no.'
@@ -88,7 +96,7 @@ function numberGame(){
     } else if (numberGuesser < correctAnswer) {
       alert(`Your guess is too low. You have ${i - 1} attempts remaining.`);
     } else if (numberGuesser > correctAnswer) {
-      alert(`Your guess is too high. You have ${i} attempts remaining.`);
+      alert(`Your guess is too high. You have ${i - 1} attempts remaining.`);
     }
 
     if (i === 1) {
@@ -98,26 +106,28 @@ function numberGame(){
   }
 }
 
-let sports = ['baseball', 'hockey', 'basketball', 'football', 'wrestling'];
+function sportsGuesser(){
 
-//let userInput = prompt('What was a sport I played growing up?');
+  let sports = ['baseball', 'hockey', 'basketball', 'football', 'wrestling'];
 
-let guesses = 0;
-let correct = false;
-for (let k = 6; k > guesses; k--) {
-  let userInput = prompt('What was a sport I played growing up?');
-  for (let j = 0; j < sports.length; j++) {
-    if (userInput.toLowerCase() === sports[j]) {
-      alert('That is correct!');
-      correct = true;
-      score++;
+  let guesses = 0;
+  let correct = false;
+  for (let k = 6; k > guesses; k--) {
+    let userInput = prompt('What was a sport I played growing up?');
+    for (let j = 0; j < sports.length; j++) {
+      if (userInput.toLowerCase() === sports[j]) {
+        alert('That is correct!');
+        correct = true;
+        score++;
+      }
     }
+    if (!correct) {
+      alert(`You have ${[k - 1]} guesses left.`);
+    }
+    if (correct) break;
   }
-  if (!correct) {
-    alert(`You have ${[k - 1]} guesses left.`);
-  }
-  if (correct) break;
-}
 
-alert(`The sports I played growing up were ${sports}`);
-alert(`Your total score was ${score}`);
+  alert(`The sports I played growing up were ${sports}`);
+  alert(`Your total score was ${score}`);
+
+}
