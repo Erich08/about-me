@@ -48,26 +48,30 @@ function meal(){
   }
 }
 
-let questionFour = prompt('Am I an Air Force veteran?').toUpperCase();
+function veteran(){
+  let questionFour = prompt('Am I an Air Force veteran?').toUpperCase();
 
-if (questionFour === 'YES' || questionFour === 'Y') {
-  //console.log('That is incorrect! I am a Marine Corps veteran');
-  alert('That is incorrect! I am a Marine Corps veteran');
-} else {
-  //console.log('You are correct! I am a Marine Corps veteran');
-  alert('You are correct! I am a Marine Corps veteran');
-  score++;
+  if (questionFour === 'YES' || questionFour === 'Y') {
+    //console.log('That is incorrect! I am a Marine Corps veteran');
+    alert('That is incorrect! I am a Marine Corps veteran');
+  } else {
+    //console.log('You are correct! I am a Marine Corps veteran');
+    alert('You are correct! I am a Marine Corps veteran');
+    score++;
+  }
 }
 
-let questionFive = prompt('Do I have 2 kids?').toUpperCase();
+function kids(){
+  let questionFive = prompt('Do I have 2 kids?').toUpperCase();
 
-if (questionFive === 'YES' || questionFive === 'Y') {
-  //console.log('That is incorrect! I have three kids.');
-  alert('That is incorrect! I have three kids.');
-} else {
-  //console.log('That is correct!');
-  alert('That is correct!');
-  score++;
+  if (questionFive === 'YES' || questionFive === 'Y') {
+    //console.log('That is incorrect! I have three kids.');
+    alert('That is incorrect! I have three kids.');
+  } else {
+    //console.log('That is correct!');
+    alert('That is correct!');
+    score++;
+  }
 }
 
 let attempts = 1;
